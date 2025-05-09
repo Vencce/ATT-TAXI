@@ -1,60 +1,182 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 html {
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(15px+ 0.39965vw);
+    font-family: "Roboto", sans-serif;
+    font-size: calc(15px + 0.3986vw);
 }
 
-a {
-    text-decoration: none;
+a{
     color: black;
+    text-decoration: none;
 }
 
-a.img {
+a.logo{
+    display: flex;
     align-items: center;
 }
 
 a.login {
-    color: orange;
+    color: #FBBC05;
+    margin: 15px;
 }
 
-a.get-started {
+a.get-started{
     color: white;
-    background-color: orange;
-    padding: 10px;
+    background-color: #FBBC05;
+    padding: 5px 10px 5px 10px;
     border-radius: 5px;
 }
 
-header {
-    background-color: #f8f8f8;
+header{
     padding: 2vw 8vw 2vw 8vw;
-    box-shadow: 0px 0px 10px #888888;
-    position: sticky;
 }
 
-@media (min-width: 1024px) {
+section.banner {
+    background: url(../img/iPhone-13-Pro-Front.png) no-repeat right, linear-gradient(rgba(225, 244, 255, 0.5), rgba(225, 244, 255, 0.5)), url(../img/background-footer.png);
+    padding: 10vw 8vw;
+    background-size: auto 100%, auto, 100% auto;
+}
+
+section.banner h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(37, 43, 67);
+}
+
+section.banner p.text {
+    width: 30%;
+    color: gray;
+}
+
+section.banner p {
+    margin: 40px 0;
+}
+
+section.banner p button span {
+    margin: 0 5px 0 0;
+}
+
+section.banner p button {
+    background-color: rgb(37, 43, 67);
+    color: white;
+    padding:  10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+}
+
+/* Pagina 2 - Taxi */
+
+section div.text {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw 10vw;
+    align-items: center;
+    text-align: center;
+}
+
+section div.text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(37, 43, 67);
+    margin-bottom: 30px;
+}
+
+section div.text p {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+section div.text2 {
+    display: flex;
+    padding: 4vw 10vw;
+}
+
+section div.text2 img {
+    width: 30%;
+}
+
+section div.text2 div.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10vw;
+}
+
+section div.text2 div.cards div.card {
+    margin: 20px 0;
+}
+
+section div.text2 div.cards div.card span {
+    font-size: 2rem;
+    color: #FBBC05;
+    background-color: #E1F4FF;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+section div.text2 div.cards div.card h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(37, 43, 67);
+    margin: 40px 0 40px 0;
+}
+
+section div.text2 div.cards div.card p {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+section.download {
+    background-color: #FBBC05;
+    margin: 5vw 15vw 5vw 15vw;
+    padding: 10vw;
+    border-radius: 25px;
+}
+
+section.download h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+section.download p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+@media (min-width:1024px) {
     header nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    header nav >ul {
+    header nav ul {
         display: flex;
         align-items: center;
     }
-    header nav ul li {
-        margin: 0 10px 0 10px;
-    }
 
+    header nav ul li{
+        margin: 0px 10px 0px 10px;
+    }
+    
     header nav ul ul {
         display: none;
     }
 
-    header nav ul li:hover ul {
+    header nav ul li:hover ul{
         display: block;
         position: absolute;
     }
-    header nav ul ul li {
-        margin: 5px 0 5px 0;
+
+    header nav ul ul li{
+        margin: 5px 0px 5px 0px;
     }
+    
 }
