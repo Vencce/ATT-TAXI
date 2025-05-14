@@ -127,22 +127,348 @@ section div.text2 div.cards div.card p {
 }
 
 section.download {
-    background-color: #FBBC05;
-    margin: 5vw 15vw 5vw 15vw;
-    padding: 10vw;
-    border-radius: 25px;
+  background:
+    url(../img/iPhone-13-Pro-Front.png) no-repeat,
+    url(../img/iPhone-13-Pro-Front.png) no-repeat,
+    linear-gradient(#fbbc05, #fbbc05);
+  background-size:
+    400px auto,
+    400px auto,
+    cover;
+  background-position:
+    95% -195px,
+    65% 205px,
+    center;
+  border-radius: 30px;
+  padding: 130px 8vw;
+  margin: 60px auto;
+  max-width: 1100px;
+  position: relative;
+  overflow: hidden;
 }
 
-section.download h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 30px;
+.download-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-section.download p {
-    color: white;
-    font-size: 0.8rem;
+.download-text {
+  flex: 1;
+  max-width: 480px;
+  color: white;
+}
+
+.download-text h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  font-family: "Cabin" sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.download-text p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 80px;
+  font-family: "Cabin" sans-serif;
+  font-weight: 400;
+
+}
+
+.download-text button {
+  background-color: #1e2a48;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 60px;
+}
+
+.services-text {
+  flex: 0 0 300px;
+  text-align: left;
+}
+
+.services-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #07070A;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  margin: 30px 0 20px;
+}
+
+.services-text p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #07070A;
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  max-width: 860px;
+}
+
+.service-card {
+  background-color: #f3f3f3;
+  width: 360px;
+  height: 360px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.service-card.highlight {
+  background-color: #fdd102;
+  color: #07070A;
+}
+
+.service-card .icon {
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+
+.service-card h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #07070A;
+  margin-bottom: 10px;
+  margin: 20px 0 20px 0;
+  line-height: 1.2;
+}
+
+.service-card p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #39393B;
+  margin: 0;
+}
+
+section.contact {
+  padding: 50px 5vw;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-text h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact-text p {
+  color: #39393B;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+.form-left,
+.form-right,
+.form-map {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-left input,
+.form-right input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #FAD007;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  color: #39393B;
+}
+
+
+.contact-form textarea[name="message"] {
+  height: 20rem;           
+  width: 200%;             
+  max-width: 200%;           
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #FAD007;
+  padding: 10px;
+  resize: none;
+  outline: none;
+}
+
+
+.contact-form button {
+  background-color: #FAD007;
+  color: #39393B;
+  border: none;
+  padding: 20px 15px 20px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.7rem;
+  width: 100px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e4bc00;
+}
+
+.form-map iframe {
+  width: 160%;
+  height: 90%;
+  border: 0;
+
+}
+
+/* footer */
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 8vw;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 0.1;
+  min-width: 250px;
+  text-align: left;
+  direction: ltr;
+}
+
+.footer-left p {
+  margin-bottom: 15px;
+  color: #737373;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.social-icons a {
+  color: #FAD007;
+  font-size: 20px;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+.footer-right {
+  flex: 0.2;
+  text-align: left;
+  direction: rtl;
+
+}
+
+.footer-right h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #1a1a2e;
+  font-weight: bold;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #737373;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  background-color: #E1F4FF; height: 100%;
+  padding: 20px 10px;
+  font-weight: bold;
+  color: #737373;
+  font-size: 0.65rem;
+  
+}
+@media (min-width:1024px) {
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav ul li{
+        margin: 0px 10px 0px 10px;
+    }
+    
+    header nav ul ul {
+        display: none;
+    }
+
+    header nav ul li:hover ul{
+        display: block;
+        position: absolute;
+    }
+
+    header nav ul ul li{
+        margin: 5px 0px 5px 0px;
+    }
+    
 }
 
 
